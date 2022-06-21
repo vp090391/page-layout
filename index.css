@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
     background-image: url("./assets/BG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1920px;
     margin: 0 auto;
+    font-family: Montserrat, sans-serif;
 }
 
 ul {
@@ -11,7 +14,176 @@ ul {
     padding: 0;
     margin: 0;
 }
-
 a {
     cursor: pointer;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 1570px;
+}
+
+.nav {
+    margin: 0 9vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-transform: uppercase;
+    height: 10vh;
+    font-size: 1.5vh;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.07);
+}
+
+.nav li {
+    height: 100%;
+    display: flex;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #1C1C1C;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav a:hover {
+    text-decoration: underline #F38120;
+    transform: scale(1.1);
+}
+
+.nav a img {
+    height: 2.2vh;
+    width: auto;
+}
+
+.header {
+    margin: 0 9vw;
+    height: 14.8vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.header p {
+    font-weight: 400;
+    font-size: 1.2vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.header p b {
+    font-weight: 700;
+}
+
+.header li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.header li:nth-child(1) {
+    flex-flow: column nowrap;
+}
+.header li:nth-child(1) p {
+    letter-spacing: 0.02em;
+}
+.header li:nth-child(1) p b {
+    font-weight: 600;
+}
+
+.header li:nth-child(2) a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.header li:nth-child(2) a button {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 1.1vh;
+    text-align: center;
+    height: 4.4vh;
+    width: 4.4vh;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #12C868;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+.header li:nth-child(2) a button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.header li:nth-child(2) a button:active {
+    transform: scale(0.9);
+}
+.header li:nth-child(2) a p {
+    letter-spacing: 0.04em;
+    border-bottom: 1px dashed #12C868;
+}
+.header li:nth-child(2) a p b{
+    font-weight: 600;
+}
+
+.header li:nth-child(3) img{
+    height: 14.8vh;
+    width: auto;
+}
+
+.header li:nth-child(4) {
+    flex-flow: row wrap;
+    height: 50%;
+    align-self: center;
+}
+.header li:nth-child(4) p {
+    flex-basis: 100%;
+    letter-spacing: 0.02em;
+}
+.header li:nth-child(4) a {
+    height: 4.4vh;
+}
+.header li:nth-child(4) img{
+    height: 4.4vh;
+    width: auto;
+}
+.header li:nth-child(4) img:hover{
+    transform: scale(1.1);
+}
+.header li:nth-child(4) img:active{
+    transform: scale(0.9);
+}
+.header li:nth-child(4) a:nth-child(3){
+    margin: 0 1.4vh;
+}
+
+.header li:nth-child(5) {
+    flex-flow: column nowrap;
+    height: 50%;
+    align-self: center;
+    letter-spacing: 0.02em;
+}
+.header li:nth-child(5) a {
+    text-decoration: none;
+    color: #1C1C1C;
+}
+.header li:nth-child(5) a p {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 2.2vh;
+}
+.header li:nth-child(5) button {
+    color: #12C868;
+    font-size: 1.2vh;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 0.04em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px dashed #12C868;
+}
+.header li:nth-child(5) button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.header li:nth-child(5) button:active {
+    transform: scale(0.9);
 }
